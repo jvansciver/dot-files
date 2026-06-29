@@ -2,34 +2,27 @@
 
 ## tmux
 
-Using tmux.config from a dotfiles folder
 Default folders are in `$HOME/.tmux.conf` or in `$HOME/.config/tmux`
 
-```bash
-$ cp ~/.tmux.conf ~/dot-files/tmux/tmux.conf
-$ ln -s dot-files/tmux/tmux.conf ~/.config/.tmux.conf
-```
+After creating a first `tmux` session you have to install/update the TPM plugins via `<prefix-I>` or `<prefix-U>` 
 
 ## Starship 
 
 Cross shell prompt (see https://starship.rs/)
 
-- Create a starship toml file in dotfiles structure
-- Symlink the file to the expected location under '$HOME/.config'
-
-```bash
-$ ln -s ~/dot-files/starship/starship.toml ~/.config/starship.toml
-$ cat ~/.config/starship.toml
-```
 ## neovim
 
-AI-Generated base config
+AI-Generated base config, will be enhanced step by step manually.
+
+# Deployment
+
+For deploying these configuration files you can use the [GNU stow](https://www.gnu.org/software/stow/manual/stow.html) tool.
+Assuming you are in the root of your local dot-files repo, you can issue this command
 
 ```bash
-$ ln -s ~/dot-files/nvim ~/.config/nvim
-```
+$ stow -t $HOME tmux starship nvim
+``` 
 
-# TODO: 
+This will create symlinks in your `HOME` folder for the specific dot-files. 
 
-Use proper tools for dot-files e.g. GNU stow and enhance documentation
 
