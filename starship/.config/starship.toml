@@ -11,13 +11,11 @@ $git_branch\
 $git_status\
 [](fg:yellow bg:green)\
 $c\
+$cpp\
 $rust\
 $golang\
 $nodejs\
-$php\
 $java\
-$kotlin\
-$haskell\
 $python\
 [](fg:green bg:sapphire)\
 $conda\
@@ -86,6 +84,11 @@ format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
 
 [nodejs]
 symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
+
+[bun]
+symbol = ""
 style = "bg:green"
 format = '[[ $symbol( $version) ](fg:crust bg:green)]($style)'
 
