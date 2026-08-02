@@ -4,9 +4,9 @@
 
 Default folders are in `$HOME/.tmux.conf` or in `$HOME/.config/tmux`
 
-After creating a first `tmux` session you have to install/update the TPM plugins via `<prefix-I>` or `<prefix-U>` 
+After creating a first `tmux` session you have to install/update the TPM plugins via `<prefix-I>` or `<prefix-U>`
 
-## Starship 
+## Starship
 
 Cross shell prompt (see https://starship.rs/)
 
@@ -14,15 +14,16 @@ Cross shell prompt (see https://starship.rs/)
 
 AI-Generated base config, will be enhanced step by step manually.
 
-# Deployment
+## Deployment
 
-For deploying these configuration files you can use the [GNU stow](https://www.gnu.org/software/stow/manual/stow.html) tool.
-Assuming you are in the root of your local dot-files repo, you can issue this command
+For deploying these configuration files you can use the [GNU stow](https://www.gnu.org/software/stow/manual/stow.html) tool. Assuming you are in the root of your local dot-files repo, you can issue this command
 
 ```bash
-$ stow -t $HOME tmux starship nvim
-``` 
+stow -t $HOME tmux starship nvim
+```
 
-This will create symlinks in your `HOME` folder for the specific dot-files. 
+This will create symlinks in your `HOME` folder for the specific dot-files.
 
+## Links
 
+* Awesome resource for managing dot-files at [Manage your Dotfiles like a Superhero](https://www.jakewiesler.com/blog/managing-dotfiles)
