@@ -18,11 +18,19 @@ AI-Generated base config, will be enhanced step by step manually.
 
 For deploying these configuration files you can use the [GNU stow](https://www.gnu.org/software/stow/manual/stow.html) tool. Assuming you are in the root of your local dot-files repo, you can issue this command
 
-```bash
+```sh
 stow -t $HOME tmux starship nvim
 ```
 
+In Debug mode:
+
+```sh
+stow --verbose=5 -t $HOME$ tmux starship nvim
+```
+
 This will create symlinks in your `HOME` folder for the specific dot-files.
+
+* nvim: $HOME/.config/nvim
 
 ## Links
 
